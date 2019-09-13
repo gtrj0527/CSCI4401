@@ -1,0 +1,128 @@
+Enter the number of times you'd like the fork loop to run: 5
+You entered 5, so the loop will run 5 times. 
+
+Loop #0 
+The process PID is 2594 and this process' parent PID is 1701 
+Loop #0 
+The process PID is 2595 and this process' parent PID is 2594 
+Loop #1 
+The process PID is 2595 and this process' parent PID is 2594 
+Loop #1 
+The process PID is 2596 and this process' parent PID is 2595 
+Loop #2 
+The process PID is 2596 and this process' parent PID is 2595 
+Loop #2 
+The process PID is 2597 and this process' parent PID is 2596 
+Loop #3 
+The process PID is 2597 and this process' parent PID is 2596 
+Loop #3 
+The process PID is 2598 and this process' parent PID is 2597 
+Loop #4 
+The process PID is 2598 and this process' parent PID is 2597 
+Loop #4 
+The process PID is 2599 and this process' parent PID is 2598 
+Loop #4 
+The process PID is 2597 and this process' parent PID is 2596 
+Loop #4 
+The process PID is 2600 and this process' parent PID is 2597 
+Loop #3 
+The process PID is 2596 and this process' parent PID is 2595 
+Loop #3 
+The process PID is 2601 and this process' parent PID is 2596 
+Loop #4 
+The process PID is 2601 and this process' parent PID is 2596 
+Loop #4 
+The process PID is 2602 and this process' parent PID is 2601 
+Loop #4 
+The process PID is 2596 and this process' parent PID is 2595 
+Loop #4 
+The process PID is 2603 and this process' parent PID is 2596 
+Loop #2 
+The process PID is 2595 and this process' parent PID is 2594 
+Loop #2 
+The process PID is 2604 and this process' parent PID is 2595 
+Loop #3 
+The process PID is 2604 and this process' parent PID is 2595 
+Loop #3 
+The process PID is 2605 and this process' parent PID is 2604 
+Loop #4 
+The process PID is 2605 and this process' parent PID is 2604 
+Loop #4 
+The process PID is 2606 and this process' parent PID is 2605 
+Loop #4 
+The process PID is 2604 and this process' parent PID is 2595 
+Loop #4 
+The process PID is 2607 and this process' parent PID is 2604 
+Loop #3 
+The process PID is 2595 and this process' parent PID is 2594 
+Loop #3 
+The process PID is 2608 and this process' parent PID is 2595 
+Loop #4 
+The process PID is 2608 and this process' parent PID is 2595 
+Loop #4 
+The process PID is 2609 and this process' parent PID is 2608 
+Loop #4 
+The process PID is 2595 and this process' parent PID is 2594 
+Loop #4 
+The process PID is 2610 and this process' parent PID is 2595 
+Loop #1 
+The process PID is 2594 and this process' parent PID is 1701 
+Loop #1 
+The process PID is 2611 and this process' parent PID is 2594 
+Loop #2 
+The process PID is 2611 and this process' parent PID is 2594 
+Loop #2 
+The process PID is 2612 and this process' parent PID is 2611 
+Loop #3 
+The process PID is 2612 and this process' parent PID is 2611 
+Loop #3 
+The process PID is 2613 and this process' parent PID is 2612 
+Loop #4 
+The process PID is 2613 and this process' parent PID is 2612 
+Loop #4 
+The process PID is 2614 and this process' parent PID is 2613 
+Loop #4 
+The process PID is 2612 and this process' parent PID is 2611 
+Loop #4 
+The process PID is 2615 and this process' parent PID is 2612 
+Loop #3 
+The process PID is 2611 and this process' parent PID is 2594 
+Loop #3 
+The process PID is 2616 and this process' parent PID is 2611 
+Loop #4 
+The process PID is 2616 and this process' parent PID is 2611 
+Loop #4 
+The process PID is 2617 and this process' parent PID is 2616 
+Loop #4 
+The process PID is 2611 and this process' parent PID is 2594 
+Loop #4 
+The process PID is 2618 and this process' parent PID is 2611 
+Loop #2 
+The process PID is 2594 and this process' parent PID is 1701 
+Loop #2 
+The process PID is 2619 and this process' parent PID is 2594 
+Loop #3 
+The process PID is 2619 and this process' parent PID is 2594 
+Loop #3 
+The process PID is 2620 and this process' parent PID is 2619 
+Loop #4 
+The process PID is 2620 and this process' parent PID is 2619 
+Loop #4 
+The process PID is 2621 and this process' parent PID is 2620 
+Loop #4 
+The process PID is 2619 and this process' parent PID is 2594 
+Loop #4 
+The process PID is 2622 and this process' parent PID is 2619 
+Loop #3 
+The process PID is 2594 and this process' parent PID is 1701 
+Loop #3 
+The process PID is 2623 and this process' parent PID is 2594 
+Loop #4 
+The process PID is 2623 and this process' parent PID is 2594 
+Loop #4 
+The process PID is 2624 and this process' parent PID is 2623 
+Loop #4 
+The process PID is 2594 and this process' parent PID is 1701 
+Loop #4 
+The process PID is 2625 and this process' parent PID is 2594 
+

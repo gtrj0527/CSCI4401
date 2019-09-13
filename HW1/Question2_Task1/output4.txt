@@ -1,0 +1,64 @@
+Enter the number of times you'd like the fork loop to run: 4
+You entered 4, so the loop will run 4 times. 
+
+Loop #0 
+The process PID is 2568 and this process' parent PID is 1701 
+Loop #0 
+The process PID is 2569 and this process' parent PID is 2568 
+Loop #1 
+The process PID is 2569 and this process' parent PID is 2568 
+Loop #1 
+The process PID is 2570 and this process' parent PID is 2569 
+Loop #2 
+The process PID is 2570 and this process' parent PID is 2569 
+Loop #2 
+The process PID is 2571 and this process' parent PID is 2570 
+Loop #3 
+The process PID is 2571 and this process' parent PID is 2570 
+Loop #3 
+The process PID is 2572 and this process' parent PID is 2571 
+Loop #3 
+The process PID is 2570 and this process' parent PID is 2569 
+Loop #3 
+The process PID is 2573 and this process' parent PID is 2570 
+Loop #2 
+The process PID is 2569 and this process' parent PID is 2568 
+Loop #2 
+The process PID is 2574 and this process' parent PID is 2569 
+Loop #3 
+The process PID is 2574 and this process' parent PID is 2569 
+Loop #3 
+The process PID is 2575 and this process' parent PID is 2574 
+Loop #3 
+The process PID is 2569 and this process' parent PID is 2568 
+Loop #3 
+The process PID is 2576 and this process' parent PID is 2569 
+Loop #1 
+The process PID is 2568 and this process' parent PID is 1701 
+Loop #1 
+The process PID is 2577 and this process' parent PID is 2568 
+Loop #2 
+The process PID is 2577 and this process' parent PID is 2568 
+Loop #2 
+The process PID is 2578 and this process' parent PID is 2577 
+Loop #3 
+The process PID is 2578 and this process' parent PID is 2577 
+Loop #3 
+The process PID is 2579 and this process' parent PID is 2578 
+Loop #3 
+The process PID is 2577 and this process' parent PID is 2568 
+Loop #3 
+The process PID is 2580 and this process' parent PID is 2577 
+Loop #2 
+The process PID is 2568 and this process' parent PID is 1701 
+Loop #2 
+The process PID is 2581 and this process' parent PID is 2568 
+Loop #3 
+The process PID is 2581 and this process' parent PID is 2568 
+Loop #3 
+The process PID is 2582 and this process' parent PID is 2581 
+Loop #3 
+The process PID is 2568 and this process' parent PID is 1701 
+Loop #3 
+The process PID is 2583 and this process' parent PID is 2568 
+

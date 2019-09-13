@@ -1,0 +1,16 @@
+Enter the number of times you'd like the fork loop to run: 2
+You entered 2, so the loop will run 2 times. 
+
+Loop #0 
+The process PID is 2418 and this process' parent PID is 1701 
+Loop #0 
+The process PID is 2419 and this process' parent PID is 2418 
+Loop #1 
+The process PID is 2419 and this process' parent PID is 2418 
+Loop #1 
+The process PID is 2420 and this process' parent PID is 2419 
+Loop #1 
+The process PID is 2418 and this process' parent PID is 1701 
+Loop #1 
+The process PID is 2421 and this process' parent PID is 2418 
+
