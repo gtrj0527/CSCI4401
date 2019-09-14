@@ -8,20 +8,16 @@
  * HW1, Q2, Task 1	    *
  ****************************/
 int main(){
-	int i, userEntry;
+	int i, userEntry, got_pid, status;
 	pid_t pid;
 	FILE *output;
 
 	output = fopen("output.txt", "w");
 
+	//get user input and print results to screen
 	printf("Enter the number of times you'd like the fork loop to run: ");
-	fprintf(output, "Enter the number of times you'd like the fork loop to run: \n");
-
 	scanf("%d", &userEntry);	//Store the number the user enters
-
 	printf("You entered %d, so the loop will run %d times. \n\n", userEntry, userEntry);
-
-	fprintf(output, "You entered %d, so the loop will run %d times. \n\n", userEntry, userEntry);
 
 	//for loop through the number of iterations requested by the user
 	for(i = 0; i < userEntry; i++)
@@ -34,25 +30,30 @@ int main(){
 		{
 			perror("Fork failure");
 		}
-		
-		//display the process PID and its parent's PID		
-		else {
-			printf("Loop #%d \n", i);
-			printf("The process PID is %d and this process' parent PID is %d \n", getpid(), getppid());
-			wait(NULL);	//acct for parent moving faster than child
-
+				
+		//child process	displays its PID and its parent's PID	
+		else if (pid == 0)
+		{
+			printf("Loop #%d \n", i+1);
+			printf("I am a child and have no children. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
 			//print results to output.txt
-			fprintf(output, "Loop #%d \n", i);
-			fprintf(output, "The process PID is %d and this process' parent PID is %d \n", getpid(), getppid());			
+			fprintf(output, "Loop #%d \n", i+1);
+			fprintf(output, "I am a child and have no children. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
 		}
+		
+		//parent displays its process PID and its parent's PID		
+		else {	
+			printf("Loop #%d \n", i+1);
+			printf("I am a parent and have a child. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
+			wait(NULL);
+			//print results to output.txt
+			fprintf(output, "Loop #%d \n", i+1);
+			fprintf(output, "I am a parent and have a child. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
+		}
+		
 	}
-	fclose(output);		//good practice to close
+	fclose(output);
 	return 0;	//0 because main defined as int
 }
 
 
-
-
-
-
-	
