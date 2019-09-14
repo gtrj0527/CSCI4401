@@ -45,8 +45,8 @@ int main(){
 			fprintf(output, "Loop #%d \n", i);
 			fprintf(output, "The process PID is %d and this process' parent PID is %d \n", getpid(), getppid());			
 		}
-		fclose(output);		//good practice to close
 	}
+	fclose(output);		//good practice to close
 	return 0;	//0 because main defined as int
 }
 
