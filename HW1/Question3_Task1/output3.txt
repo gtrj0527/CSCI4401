@@ -1,0 +1,48 @@
+Loop #1 
+I am a child and have no children. My process PID is 3975, and my parent PID is 3974 
+Loop #2 
+I am a child and have no children. My process PID is 3976, and my parent PID is 3975 
+Loop #3 
+I am a child and have no children. My process PID is 3977, and my parent PID is 3976 
+Loop #1 
+I am a child and have no children. My process PID is 3975, and my parent PID is 3974 
+Loop #2 
+I am a child and have no children. My process PID is 3976, and my parent PID is 3975 
+Loop #3 
+I am a parent and have a child. My process PID is 3976, and my parent PID is 3975 
+Loop #1 
+I am a child and have no children. My process PID is 3975, and my parent PID is 3974 
+Loop #2 
+I am a parent and have a child. My process PID is 3975, and my parent PID is 3974 
+Loop #3 
+I am a child and have no children. My process PID is 3978, and my parent PID is 3975 
+Loop #1 
+I am a child and have no children. My process PID is 3975, and my parent PID is 3974 
+Loop #2 
+I am a parent and have a child. My process PID is 3975, and my parent PID is 3974 
+Loop #3 
+I am a parent and have a child. My process PID is 3975, and my parent PID is 3974 
+Loop #1 
+I am a parent and have a child. My process PID is 3974, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 3979, and my parent PID is 3974 
+Loop #3 
+I am a child and have no children. My process PID is 3980, and my parent PID is 3979 
+Loop #1 
+I am a parent and have a child. My process PID is 3974, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 3979, and my parent PID is 3974 
+Loop #3 
+I am a parent and have a child. My process PID is 3979, and my parent PID is 3974 
+Loop #1 
+I am a parent and have a child. My process PID is 3974, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 3974, and my parent PID is 3598 
+Loop #3 
+I am a child and have no children. My process PID is 3981, and my parent PID is 3974 
+Loop #1 
+I am a parent and have a child. My process PID is 3974, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 3974, and my parent PID is 3598 
+Loop #3 
+I am a parent and have a child. My process PID is 3974, and my parent PID is 3598 

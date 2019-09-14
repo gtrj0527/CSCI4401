@@ -1,0 +1,320 @@
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a child and have no children. My process PID is 4026, and my parent PID is 4025 
+Loop #4 
+I am a child and have no children. My process PID is 4027, and my parent PID is 4026 
+Loop #5 
+I am a child and have no children. My process PID is 4028, and my parent PID is 4027 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a child and have no children. My process PID is 4026, and my parent PID is 4025 
+Loop #4 
+I am a child and have no children. My process PID is 4027, and my parent PID is 4026 
+Loop #5 
+I am a parent and have a child. My process PID is 4027, and my parent PID is 4026 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a child and have no children. My process PID is 4026, and my parent PID is 4025 
+Loop #4 
+I am a parent and have a child. My process PID is 4026, and my parent PID is 4025 
+Loop #5 
+I am a child and have no children. My process PID is 4029, and my parent PID is 4026 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a child and have no children. My process PID is 4026, and my parent PID is 4025 
+Loop #4 
+I am a parent and have a child. My process PID is 4026, and my parent PID is 4025 
+Loop #5 
+I am a parent and have a child. My process PID is 4026, and my parent PID is 4025 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a parent and have a child. My process PID is 4025, and my parent PID is 4024 
+Loop #4 
+I am a child and have no children. My process PID is 4030, and my parent PID is 4025 
+Loop #5 
+I am a child and have no children. My process PID is 4031, and my parent PID is 4030 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a parent and have a child. My process PID is 4025, and my parent PID is 4024 
+Loop #4 
+I am a child and have no children. My process PID is 4030, and my parent PID is 4025 
+Loop #5 
+I am a parent and have a child. My process PID is 4030, and my parent PID is 4025 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a parent and have a child. My process PID is 4025, and my parent PID is 4024 
+Loop #4 
+I am a parent and have a child. My process PID is 4025, and my parent PID is 4024 
+Loop #5 
+I am a child and have no children. My process PID is 4032, and my parent PID is 4025 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a child and have no children. My process PID is 4025, and my parent PID is 4024 
+Loop #3 
+I am a parent and have a child. My process PID is 4025, and my parent PID is 4024 
+Loop #4 
+I am a parent and have a child. My process PID is 4025, and my parent PID is 4024 
+Loop #5 
+I am a parent and have a child. My process PID is 4025, and my parent PID is 4024 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4033, and my parent PID is 4024 
+Loop #4 
+I am a child and have no children. My process PID is 4034, and my parent PID is 4033 
+Loop #5 
+I am a child and have no children. My process PID is 4035, and my parent PID is 4034 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4033, and my parent PID is 4024 
+Loop #4 
+I am a child and have no children. My process PID is 4034, and my parent PID is 4033 
+Loop #5 
+I am a parent and have a child. My process PID is 4034, and my parent PID is 4033 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4033, and my parent PID is 4024 
+Loop #4 
+I am a parent and have a child. My process PID is 4033, and my parent PID is 4024 
+Loop #5 
+I am a child and have no children. My process PID is 4036, and my parent PID is 4033 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4033, and my parent PID is 4024 
+Loop #4 
+I am a parent and have a child. My process PID is 4033, and my parent PID is 4024 
+Loop #5 
+I am a parent and have a child. My process PID is 4033, and my parent PID is 4024 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #4 
+I am a child and have no children. My process PID is 4037, and my parent PID is 4024 
+Loop #5 
+I am a child and have no children. My process PID is 4038, and my parent PID is 4037 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #4 
+I am a child and have no children. My process PID is 4037, and my parent PID is 4024 
+Loop #5 
+I am a parent and have a child. My process PID is 4037, and my parent PID is 4024 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #4 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #5 
+I am a child and have no children. My process PID is 4039, and my parent PID is 4024 
+Loop #1 
+I am a child and have no children. My process PID is 4024, and my parent PID is 4023 
+Loop #2 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #4 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #5 
+I am a parent and have a child. My process PID is 4024, and my parent PID is 4023 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4041, and my parent PID is 4040 
+Loop #4 
+I am a child and have no children. My process PID is 4042, and my parent PID is 4041 
+Loop #5 
+I am a child and have no children. My process PID is 4043, and my parent PID is 4042 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4041, and my parent PID is 4040 
+Loop #4 
+I am a child and have no children. My process PID is 4042, and my parent PID is 4041 
+Loop #5 
+I am a parent and have a child. My process PID is 4042, and my parent PID is 4041 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4041, and my parent PID is 4040 
+Loop #4 
+I am a parent and have a child. My process PID is 4041, and my parent PID is 4040 
+Loop #5 
+I am a child and have no children. My process PID is 4044, and my parent PID is 4041 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a child and have no children. My process PID is 4041, and my parent PID is 4040 
+Loop #4 
+I am a parent and have a child. My process PID is 4041, and my parent PID is 4040 
+Loop #5 
+I am a parent and have a child. My process PID is 4041, and my parent PID is 4040 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4040, and my parent PID is 4023 
+Loop #4 
+I am a child and have no children. My process PID is 4045, and my parent PID is 4040 
+Loop #5 
+I am a child and have no children. My process PID is 4046, and my parent PID is 4045 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4040, and my parent PID is 4023 
+Loop #4 
+I am a child and have no children. My process PID is 4045, and my parent PID is 4040 
+Loop #5 
+I am a parent and have a child. My process PID is 4045, and my parent PID is 4040 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4040, and my parent PID is 4023 
+Loop #4 
+I am a parent and have a child. My process PID is 4040, and my parent PID is 4023 
+Loop #5 
+I am a child and have no children. My process PID is 4047, and my parent PID is 4040 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a child and have no children. My process PID is 4040, and my parent PID is 4023 
+Loop #3 
+I am a parent and have a child. My process PID is 4040, and my parent PID is 4023 
+Loop #4 
+I am a parent and have a child. My process PID is 4040, and my parent PID is 4023 
+Loop #5 
+I am a parent and have a child. My process PID is 4040, and my parent PID is 4023 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a child and have no children. My process PID is 4048, and my parent PID is 4023 
+Loop #4 
+I am a child and have no children. My process PID is 4049, and my parent PID is 4048 
+Loop #5 
+I am a child and have no children. My process PID is 4050, and my parent PID is 4049 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a child and have no children. My process PID is 4048, and my parent PID is 4023 
+Loop #4 
+I am a child and have no children. My process PID is 4049, and my parent PID is 4048 
+Loop #5 
+I am a parent and have a child. My process PID is 4049, and my parent PID is 4048 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a child and have no children. My process PID is 4048, and my parent PID is 4023 
+Loop #4 
+I am a parent and have a child. My process PID is 4048, and my parent PID is 4023 
+Loop #5 
+I am a child and have no children. My process PID is 4051, and my parent PID is 4048 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a child and have no children. My process PID is 4048, and my parent PID is 4023 
+Loop #4 
+I am a parent and have a child. My process PID is 4048, and my parent PID is 4023 
+Loop #5 
+I am a parent and have a child. My process PID is 4048, and my parent PID is 4023 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #4 
+I am a child and have no children. My process PID is 4052, and my parent PID is 4023 
+Loop #5 
+I am a child and have no children. My process PID is 4053, and my parent PID is 4052 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #4 
+I am a child and have no children. My process PID is 4052, and my parent PID is 4023 
+Loop #5 
+I am a parent and have a child. My process PID is 4052, and my parent PID is 4023 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #4 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #5 
+I am a child and have no children. My process PID is 4054, and my parent PID is 4023 
+Loop #1 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #2 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #3 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #4 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
+Loop #5 
+I am a parent and have a child. My process PID is 4023, and my parent PID is 3598 
