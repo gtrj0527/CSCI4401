@@ -1,0 +1,23 @@
+digraph G{
+	3598 [label="PID: 3598\nLevel: 0 {root}"];
+	
+	3598 -> 3974;
+	3974 [label="PID: 3974\nLevel: 1"];
+	
+	3974 -> 3981;
+	3981 [label="PID: 3981\nLevel: 2"];
+	3974 -> 3979;
+	3979 [label="PID: 3979\nLevel: 2"];
+	3974 -> 3975;
+	3975 [label="PID: 3975\nLevel: 2"];
+
+	3979 -> 3980;
+	3980 [label="PID: 3980\nLevel: 3"];
+	3975 -> 3978;
+	3978 [label="PID: 3978\nLevel: 3"];
+	3975 -> 3976;
+	3976 [label="PID: 3976\nLevel: 3"];
+	
+	3976 -> 3977;
+	3977 [label="PID: 3977\nLevel: 4"];
+}
