@@ -3,9 +3,7 @@
 #include <sys/wait.h>
 
 /****************************
- * Gabriela Swanson 2542788 *
- * CSCI 4401, Fall 2019     *
- * HW1, Q4      	        *
+ * HW1, Q4     	            *
  * Make the code track &    *
  *  print "Level" it's on   *
  ****************************/
