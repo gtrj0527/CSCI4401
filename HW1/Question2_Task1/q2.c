@@ -3,9 +3,10 @@
 #include <sys/wait.h>
 
 /****************************
- * Gabriela Swanson 2542788 *
- * CSCI 4401, Fall 2019     *
  * HW1, Q2, Task 1	    *
+ * Write C-language code    *
+ * that does fork() calls   *
+ * in a loop
  ****************************/
 int main(){
 	int i, userEntry, got_pid, status;
