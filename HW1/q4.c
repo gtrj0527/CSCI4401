@@ -10,8 +10,8 @@
  *  print "Level" it's on   *
  ****************************/
 int main(){
-	int i, userEntry    //, got_pid, status;
-    int level = 0;      //keeps track of what level of the tree the pid belongs to
+	int i, userEntry;    //, got_pid, status;
+	int level = 0;      //keeps track of what level of the tree the pid belongs to
 	pid_t pid;
 	FILE *output;
 
@@ -28,41 +28,41 @@ int main(){
 		//call the fork IOT mirror the current process
 		pid = fork();		
 
-        if(i==0)
-        {
-            if(pid == -1)
-            {
-                perror("For failure");
-                break;
-            }
-            else if (pid != 0)
-            {
-                fprintf(output, "Root level \n");
-                fprintf(output, "Level: %d \n", level);
-                fprintf(output, "PID: %d \n", getpid());
-                fprintf(output, "Parent PID: %d \n", getppid());
-            }
-        }
+		if(i==0)
+		{
+		    if(pid == -1)
+		    {
+		        perror("For failure");
+		        break;
+		    }
+		    else if (pid != 0)
+		    {
+		        fprintf(output, "Root level \n");
+		        fprintf(output, "Level: %d \n", level);
+		        fprintf(output, "PID: %d \n", getpid());
+		        fprintf(output, "Parent PID: %d \n", getppid());
+		    }
+		}
 
 		//account for errors	
 		if (pid == -1)
 		{
 			perror("Fork failure");
-            break;
+	    		break;
 		}
 				
 		//child process	displays its PID and its parent's PID	
 		else if (pid == 0)
 		{
-            level++;
-			printf("Loop #%d \n", i+1);
+	    		level++;
 			fprintf(output, "Level: %d \n", level);
-            fprintf(output, "PID: %d \n", getpid());
-            fprintf(output, "Parent PID: %d \n", getppid());
+	    		fprintf(output, "PID: %d \n", getpid());
+	    		fprintf(output, "Parent PID: %d \n", getppid());
 		}
 		
-		//parent sleeps until something happens and then displays its process PID and its parent's PID		
-		else {
+		//wait for child processes to finish		
+		else 
+		{
 			wait(NULL);
 		}
 	}
