@@ -3,8 +3,6 @@
 #include <sys/wait.h>
 
 /****************************
- * Gabriela Swanson 2542788 *
- * CSCI 4401, Fall 2019     *
  * HW1, Q3, Task 1	    *
  * Force parent to wait for *
  *  child to die            *
