@@ -3,22 +3,23 @@
 #include <sys/wait.h>
 
 /****************************
- * HW1, Q2, Task 1	    *
+ * HW1, Q2, Task 1	        *
  * Write C-language code    *
  * that does fork() calls   *
- * in a loop
+ * in a loop				*
  ****************************/
 int main(){
 	int i, userEntry, got_pid, status;
 	pid_t pid;
 	FILE *output;
 
-	output = fopen("output.txt", "w");
+	output = fopen("output_q2.txt", "w");
 
 	//get user input and print results to screen
 	printf("Enter the number of times you'd like the fork loop to run: ");
 	scanf("%d", &userEntry);	//Store the number the user enters
-	printf("You entered %d, so the loop will run %d times. \n\n", userEntry, userEntry);
+	printf("\n You entered %d, and your results will print to a text file titled output_q2.txt. \n", userEntry)
+	fprintf(output, "You entered %d, so the loop will run %d times. \n\n", userEntry, userEntry);
 
 	//for loop through the number of iterations requested by the user
 	for(i = 0; i < userEntry; i++)
@@ -39,22 +40,25 @@ int main(){
 			printf("I am a child and have no children. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
 			//print results to output.txt
 			fprintf(output, "Loop #%d \n", i+1);
-			fprintf(output, "I am a child and have no children. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
+			fprintf(output, "(Child) ";
+			fprintf(output, "pid: %d ", getpid());
+			fprintf(output, "ppid: %d \n\n", getppid());
 		}
 		
 		//parent displays its process PID and its parent's PID		
 		else {	
+			wait(NULL);
 			printf("Loop #%d \n", i+1);
 			printf("I am a parent and have a child. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
-			wait(NULL);
+			
 			//print results to output.txt
 			fprintf(output, "Loop #%d \n", i+1);
-			fprintf(output, "I am a parent and have a child. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
+			fprintf(output, "ForkID #%d \n", pid);
+			fprintf(output, "pid: %d ", getpid());
+			fprintf(output, "ppid: %d \n\n", getppid());
 		}
 		
 	}
 	fclose(output);
 	return 0;	//0 because main defined as int
 }
-
-
