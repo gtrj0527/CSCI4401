@@ -9,7 +9,7 @@
  * in a loop				*
  ****************************/
 int main(){
-	int i, userEntry, got_pid, status;
+	int i, userEntry, status;
 	pid_t pid;
 	FILE *output;
 
@@ -38,7 +38,7 @@ int main(){
 		{
 			printf("Loop #%d \n", i+1);
 			printf("I am a child and have no children. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
-			//print results to output.txt
+			//print results to output_q2.txt
 			fprintf(output, "Loop #%d \n", i+1);
 			fprintf(output, "(Child) ";
 			fprintf(output, "pid: %d ", getpid());
@@ -51,7 +51,7 @@ int main(){
 			printf("Loop #%d \n", i+1);
 			printf("I am a parent and have a child. My process PID is %d, and my parent PID is %d \n", getpid(), getppid());
 			
-			//print results to output.txt
+			//print results to output_q2.txt
 			fprintf(output, "Loop #%d \n", i+1);
 			fprintf(output, "ForkID #%d \n", pid);
 			fprintf(output, "pid: %d ", getpid());
