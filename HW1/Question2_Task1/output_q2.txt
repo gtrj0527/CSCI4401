@@ -1,0 +1,36 @@
+You entered 2, so the loop will run 2 times. 
+
+Loop #1 
+(Child) pid: 9340 ppid: 9317 
+
+Loop #2 
+(Child) pid: 9341 ppid: 9340 
+
+You entered 2, so the loop will run 2 times. 
+
+Loop #1 
+(Child) pid: 9340 ppid: 9317 
+
+Loop #2 
+ForkID #9341 
+pid: 9340 ppid: 9317 
+
+You entered 2, so the loop will run 2 times. 
+
+Loop #1 
+ForkID #9340 
+pid: 9317 ppid: 2985 
+
+Loop #2 
+(Child) pid: 9342 ppid: 9317 
+
+You entered 2, so the loop will run 2 times. 
+
+Loop #1 
+ForkID #9340 
+pid: 9317 ppid: 2985 
+
+Loop #2 
+ForkID #9342 
+pid: 9317 ppid: 2985 
+
