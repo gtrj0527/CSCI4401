@@ -27,7 +27,7 @@ public class ThreeThread{
 
 		String inputFile = args[0];
 
-		PrintStream fileOut = new PrintStream("Q1 Threaded Output.txt");
+		PrintStream fileOut = new PrintStream("Version-3 Output.txt");
 		System.setOut(fileOut);
 
 		long start =  System.currentTimeMillis();
