@@ -1,18 +1,15 @@
+/*
+ * I worked with D. Jaeger on this code.
+ */
 import java.io.*;
-import java.util.*;
-import java.lang.Comparable;
-import java.time.*;
 import java.text.*;
-
-
-
 
 public class WordFrequencyTest{
 	private static int letterCount 		= 0;
 	private static int totalWordCount 	= 0;
-	private static int tokenCount 		= 0;
-	private static int k		 		= 0;
-	private static int x				= 0;
+	//private static int tokenCount 		= 0;
+	//private static int k		 		= 0;
+	//private static int x				= 0;
 	private static int[] freq = new int[8];
 
 
@@ -70,9 +67,9 @@ public class WordFrequencyTest{
 		
 		System.out.println("Unthreaded Version");
 
-		int[] frequency = readFile("test.txt");
+		//int[] frequency = readFile("test.txt");
 		//int[] frequency = readFile("test2.txt");
-		//int[] frequency = readFile("enwik9");
+		int[] frequency = readFile("enwik9");
  
 		double percentage = 0;
 		int wordCount = getWordCount();
