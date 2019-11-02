@@ -5,16 +5,15 @@ import java.io.*;
 import java.text.*;
 
 public class WordFrequencyTest{
-	private static int letterCount 		= 0;
-	private static int totalWordCount 	= 0;
-	//private static int tokenCount 		= 0;
-	//private static int k		 		= 0;
-	//private static int x				= 0;
-	private static int[] freq = new int[8];
+	private static int charCount 		= 0;			//var to hold the chars in a word
+	private static int wordCount 		= 0;			//var to hold the total words
+	private static int[] freqCount 		= new int[8];	//array to hold the frequency count
 
 
+	/*
+	 * Method to read the input file's words, test that the words are made up of (a-z,A-Z,0-9), and determine the word-length frequency
+	 */
 	private static int[] readFile(String filename) throws IOException{
-
 		try(BufferedReader reader = new BufferedReader(new FileReader(filename))){
 			String line;
 
@@ -23,49 +22,52 @@ public class WordFrequencyTest{
 				String text = line;
 				text += new String(" ");
 				
+				//start the counts
 				for(char ch:text.toCharArray()){
 					if(Character.isLetterOrDigit(ch)){
-						letterCount++;
+						charCount++;
 					}
 					else if(Character.compare(ch, '-') == 0){
 					}
 					else if(Character.compare(ch, '_') == 0){
 					}
 					else if(Character.isWhitespace(ch)){
-						if (letterCount == 0){
+						if (charCount == 0){
 
 						}
-						else if (letterCount >= 8){
-							freq[7]++;
-							letterCount = 0;
-							totalWordCount++;
+						else if (charCount >= 8){
+							freqCount[7]++;
+							charCount = 0;
+							wordCount++;
 						}
 						else{
-							freq[letterCount-1]++;
-							letterCount = 0;
-							totalWordCount++;
+							freqCount[charCount-1]++;
+							charCount = 0;
+							wordCount++;
 						}
 					}
 				}
 			}
 			reader.close();	
-			return freq;
+			return freqCount;
 		}						
 	}
 
 	public static int getWordCount(){
-		return totalWordCount;
+		return wordCount;
 	}
 		
 
 	public static void main(String[] args) throws IOException{
 
-		PrintStream fileOut = new PrintStream("Q1 Unthreaded Output.txt");
+		//Set up the output file
+		PrintStream fileOut = new PrintStream("Version-1 Output.txt");
 		System.setOut(fileOut);
 
+		//Keep track of the time to run in ms
 		long start =  System.currentTimeMillis();
 		
-		System.out.println("Unthreaded Version");
+		System.out.println("Version 1 Output");
 
 		//int[] frequency = readFile("test.txt");
 		//int[] frequency = readFile("test2.txt");
@@ -74,6 +76,7 @@ public class WordFrequencyTest{
 		double percentage = 0;
 		int wordCount = getWordCount();
 
+		//Set up the output
 		System.out.println("Total Number Of Words: " + wordCount);
 
 		for (int i=0; i<frequency.length; i++){
@@ -90,7 +93,7 @@ public class WordFrequencyTest{
 		
 		long end = System.currentTimeMillis();
 
-		NumberFormat formatter = new DecimalFormat("#0.000");
-		System.out.println("Runtime: " + formatter.format((end - start) / 1000d) + " seconds");
+		NumberFormat timeFormat = new DecimalFormat("#0.000");
+		System.out.println("Runtime: " + timeFormat.format((end - start) / 1000d) + " seconds");
 	}
 }
