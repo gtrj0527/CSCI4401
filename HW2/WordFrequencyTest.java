@@ -1,4 +1,8 @@
 /*
+ * 
+ * CSCI4401, Fall 2019
+ * 
+ * References:
  * I worked with D. Jaeger on this code.
  */
 import java.io.*;
