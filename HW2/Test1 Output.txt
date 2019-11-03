@@ -1,0 +1,11 @@
+Threaded Version, Running Program With 2 Consumer Threads
+Total Number Of Words: 2456
+1 letter words: 70 words, 2.85%
+2 letter words: 393 words, 16.00%
+3 letter words: 436 words, 17.75%
+4 letter words: 353 words, 14.37%
+5 letter words: 228 words, 9.28%
+6 letter words: 209 words, 8.51%
+7 letter words: 203 words, 8.27%
+8 or more letter words: 564 words, 22.96%
+Runtime: 0.403 seconds
