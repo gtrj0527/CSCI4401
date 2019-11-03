@@ -1,4 +1,4 @@
-Threaded Version, Running Program With 2 Consumer Threads
+Threaded Version, Running Program With 2 Threads
 Total Number Of Words: 2456
 1 letter words: 70 words, 2.85%
 2 letter words: 393 words, 16.00%
