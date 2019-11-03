@@ -117,27 +117,26 @@ public class ThreeThread{
 	public static synchronized void arrayUpdate(String text){
 		for(char ch:text.toCharArray()){
 			if(Character.isLetterOrDigit(ch)){
-				letterCount++;
+				charCount++;
 			}
 			else if(Character.compare(ch, '-') == 0){
 			}
 			else if(Character.compare(ch, '_') == 0){
 			}
 			else if(Character.isWhitespace(ch)){
-				if (letterCount == 0){
+				if (charCount == 0){
 				}
-				else if (letterCount >= 8){
+				else if (charCount >= 8){
 					freq[7]++;
-					letterCount = 0;
+					charCount = 0;
 					wordCount++;	
 				}
 				else{
-					freq[letterCount-1]++;
-					letterCount = 0;
+					freq[charCount-1]++;
+					charCount = 0;
 					wordCount++;
 				}
 			}
 		}
 	}
 }
-
