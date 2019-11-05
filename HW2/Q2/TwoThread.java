@@ -1,0 +1,162 @@
+/*
+ * 
+ * CSCI4401, Fall 2019
+ * 
+ * References:
+ * I worked with D. Jaeger on this code.
+ * https://javarevisited.blogspot.com/2011/09/javalangoutofmemoryerror-permgen-space.html: export JVM_ARGS="-Xms1024m -Xmx1024m"
+ *
+ */
+
+import java.io.*;
+import java.util.concurrent.*;
+import java.text.*;
+
+
+public class TwoThread{
+
+	private static BlockingQueue<String> stringQueue = new LinkedBlockingQueue<>();
+	private static Thread[] readingThreads;
+	private static boolean finishedReading = false;
+	private static int wordCount, charCount;
+	private static int[] freq = new int[8];
+
+	public static void main(String[] args) throws InterruptedException, IOException{
+		//Was getting "UncaughtExceptionHandler" error - tried this based on StackOverflow recommendation		
+		Thread.currentThread().setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
+			public void uncaughtException(Thread t, Throwable e){
+				StringWriter sw = new StringWriter ();
+				e.printStackTrace(new PrintWriter(sw));
+				String stacktrace = sw.toString();
+				System.out.println(stacktrace);
+			}
+		});
+		
+		//Learned how to "demand" input in the java command from D. Jaeger
+		if (args.length != 1) {
+			System.out.println("1 argument needed: input file name");
+			System.exit(1);
+		}
+
+		//Set up the input & output file requirements
+		String inputFile = args[0];
+
+		PrintStream outputFile = new PrintStream("Version-2 Output.txt");
+		System.setOut(outputFile);
+
+		//Start the timer
+		long start =  System.currentTimeMillis();
+
+		System.out.println("Threaded Version, Running Program With 2 Threads");
+
+		//Dedicate one thread to read the input
+		readingThreads = new Thread[1];
+
+		//Set up one thread to produce the output
+		Thread producer = new Thread(new Producer(inputFile));
+		producer.start();
+
+		for (int i=0; i<1; i++){
+			readingThreads[i] = new Thread(new Consumer());
+			readingThreads[i].start();
+		}
+
+		producer.join();
+		for (int i=0; i<1; i++){
+			readingThreads[i].join();
+		}
+
+		//Set up the percentages based on the word length count
+		double percentage = 0;
+		System.out.println("Total Number Of Words: " + wordCount);
+
+		for (int i=0; i<freq.length; i++){
+			percentage = (((double)freq[i]) / wordCount) * 100;
+
+			if(i==7){
+				System.out.printf("8 or more letter words: %d words, %.2f%%\n", freq[i], percentage);
+			}
+			else{
+				System.out.printf("%d letter words: %d words, %.2f%%\n", i+1, freq[i], percentage);
+			}
+		}
+		
+		//Stop the timer
+		long end = System.currentTimeMillis();
+
+		//Calculate and print the total time
+		NumberFormat formatter = new DecimalFormat("#0.000");
+		System.out.println("Runtime: " + formatter.format((end - start) / 1000d) + " seconds");
+	}
+
+
+	public static class Producer extends Thread{
+		private String inputFile;
+
+		public Producer(String inputFile){
+			this.inputFile = inputFile;
+		}
+
+		@Override
+		public void run(){
+			File input = new File(inputFile);
+			int count = 0; 
+			try (BufferedReader reader = new BufferedReader(new FileReader(input));){
+				String line;
+				while ((line = reader.readLine()) != null){
+					stringQueue.put(line);
+				}
+			}
+			catch (Exception e){
+			}
+			finishedReading = true;
+		}
+	}
+
+
+	public static class Consumer extends Thread {
+		
+		@Override
+		public void run(){
+
+			while (!finishedReading || !stringQueue.isEmpty()){
+				String line = stringQueue.poll();
+				if (line == null) continue;
+
+				line = line.replaceAll("[^A-Za-z0-9-_]+", " ");
+				String text = line;
+				text += new String(" ");
+				
+				arrayUpdate(text);	
+			}
+		}
+	}
+
+	//method to a) count only alphanumeric characters, b) count the word length, and c) count the word length totals
+	public static synchronized void arrayUpdate(String text){
+		for(char ch:text.toCharArray()){
+			if(Character.isLetterOrDigit(ch)){
+				charCount++;
+			}
+			else if(Character.compare(ch, '-') == 0){
+			}
+			else if(Character.compare(ch, '_') == 0){
+			}
+			else if(Character.isWhitespace(ch)){
+				if (charCount == 0){
+				}
+				else if (charCount >= 8){
+					freq[7]++;
+					charCount = 0;
+					wordCount++;	
+				}
+				else{
+					freq[charCount-1]++;
+					charCount = 0;
+					wordCount++;
+				}
+			}
+		}
+	}
+}
+

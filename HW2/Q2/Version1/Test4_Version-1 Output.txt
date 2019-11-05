@@ -1,0 +1,11 @@
+Version 1 Output
+Total Number Of Words: 149886605
+1 letter words: 8035637 words, 5.36%
+2 letter words: 27111449 words, 18.09%
+3 letter words: 25472979 words, 16.99%
+4 letter words: 21532071 words, 14.37%
+5 letter words: 15973778 words, 10.66%
+6 letter words: 13239515 words, 8.83%
+7 letter words: 11655372 words, 7.78%
+8 or more letter words: 26865804 words, 17.92%
+Runtime: 146.361 seconds

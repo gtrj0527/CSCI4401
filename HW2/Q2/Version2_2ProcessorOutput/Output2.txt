@@ -1,0 +1,11 @@
+Threaded Version, Running Program With 2 Threads
+Total Number Of Words: 80368247
+1 letter words: 4403572 words, 5.48%
+2 letter words: 14447633 words, 17.98%
+3 letter words: 13851825 words, 17.24%
+4 letter words: 11457262 words, 14.26%
+5 letter words: 8512660 words, 10.59%
+6 letter words: 7085485 words, 8.82%
+7 letter words: 6289628 words, 7.83%
+8 or more letter words: 14320182 words, 17.82%
+Runtime: 94.168 seconds
